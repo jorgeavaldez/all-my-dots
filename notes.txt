@@ -1,0 +1,34 @@
+To list all the files you type: ls
+To print where you are: pwd
+to move between folders: cd
+To make a folder: mkdir
+To make a file: touch
+To open a file: nano
+To move up a folder: cd ..
+To print to the screen: echo string
+For help: command -h
+For manual: man command
+The name for home are: 
+	~
+	$HOME
+Root is: Root is the home before home. It is the folder that also holds all other folders. Like a tree root.NOT TO BE CONFUSED WITH ROOT USER. 
+The root user is: the first creator user. He makes all other users. Don't touch his stuff.
+To force the Shell to do something: add sudo to the beginning.
+
+PYTHON
+======
+To start the Python Shell: python
+To run a python file: Put python in the beginning and then name of file
+To save a variable:Put name of variable = value
+To ask for input: raw_input(with question) Don't forget to store in a variable
+Strings are:the characters in quotations single or double
+ints are: Whole numbers stands for integers
+To check the value of variables: write if
+To check after an if: elif is first
+If neither works: else
+Print: is to sprint bto the shell
+	use by typing print first then string in parenthesis
+For Loops:
+	for number in range(times):
+	  action
+
