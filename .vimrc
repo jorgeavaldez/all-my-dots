@@ -3,6 +3,8 @@
 set nocompatible
 filetype off " enable file type detection
 
+" this is a comment
+
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
@@ -37,9 +39,9 @@ set nobackup " do not keep the backup~ file
 set backspace=indent,eol,start " backspacing over everything in insert mode
 set expandtab " fill tabs with spaces
 set nojoinspaces " no extra space after '.' when joining lines
-set shiftwidth=8 " set indentation depth to 8 columns
-set softtabstop=8 " backspacing over 8 spaces like over tabs
-set tabstop=8 " set tabulator length to 8 columns
+set shiftwidth=4 " set indentation depth to 8 columns
+set softtabstop=4 " backspacing over 8 spaces like over tabs
+set tabstop=2 " set tabulator length to 8 columns
 set textwidth=80 " wrap lines automatically at 80th column
 
 " file type specific settings

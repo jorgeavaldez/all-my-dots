@@ -104,6 +104,8 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 alias gfcustom='gofmt -tabs=false -tabwidth=4 -w=true .'
+alias ipythonserver='sudo ipython notebook --pylab inline --no-browser --ip=*
+--port=8889'
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
