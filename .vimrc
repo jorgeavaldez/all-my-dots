@@ -11,6 +11,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'kchmck/vim-coffee-script'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -34,9 +35,13 @@ set showmatch " highlight matching braces
 set showmode " show insert/replace/visual mode
 let g:vim_markdown_folding_disabled=1 " disable vim markdown plugin default folding
 
+set noerrorbells
+set novisualbell
+
 " Write settings
 set fileencoding=utf-8 " encoding used when saving file
 set nobackup " do not keep the backup~ file
+set noswapfile
 
 " edit settings
 set backspace=indent,eol,start " backspacing over everything in insert mode
