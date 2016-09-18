@@ -63,14 +63,6 @@ export EC2_HOME=/usr/local/ec2/ec2-api-tools-1.7.5.1
 export PATH=$PATH:$EC2_HOME/bin
 export SCALA_HOME=/usr/local/share/scala-2.11.7/
 
-# API Keys
-#
-# BAOBAO
-export READABILITY_KEY=1dbde0093908cff336768693a6c02efd1553ef52
-export GOOGLE_API_KEY=AIzaSyAhHn7Nfep6igT_4aeIlxHk6xdcMmPesCY
-export AWS_ACCESS_KEY=AKIAIFBU34EOSEIGYWFQ
-export AWS_SECRET_KEY=OPAgatfKhYlPduvsgvFGJAcorAEnQf+19TXqas4W
-
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
@@ -97,9 +89,27 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias osloec2="ssh -i oslo-ec2.pem ubuntu@ec2-52-89-141-249.us-west-2.compute.amazonaws.com"
+alias osloec2="ssh -i ~/oslo-ec2.pem ubuntu@ec2-52-89-141-249.us-west-2.compute.amazonaws.com"
+alias graspec2="ssh -i ~/oslo-ec2.pem ubuntu@54.218.51.184"
+alias smufood="ssh -i ~/smufood.pem ubuntu@54.200.231.98"
 alias chrome='open -a "Google Chrome"'
+
+alias mongostart="sudo launchctl start org.mongodb.mongod"
+alias mongostop="sudo launchctl stop org.mongodb.mongod"
+
+# virtualenvwrapper
+source /usr/local/bin/virtualenvwrapper.sh
 
 knwcompile () {
     javac -cp ~/RXTXRobot/RXTXRobot.jar $1.java
 }
+
+export JAVA_HOME=$(/usr/libexec/java_home)
+export GOPATH=$HOME/Projects/go-workspace/
+export PATH=$PATH:$GOPATH/bin/
+
+# added by Miniconda2 4.0.5 installer
+export PATH="/Users/jorgeavaldez/miniconda2/bin:$PATH"
+
+export NVM_DIR="/Users/jorgeavaldez/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

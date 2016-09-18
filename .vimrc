@@ -12,6 +12,9 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'kchmck/vim-coffee-script'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
+Plugin 'mattn/emmet-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -43,12 +46,12 @@ set fileencoding=utf-8 " encoding used when saving file
 set nobackup " do not keep the backup~ file
 set noswapfile
 
-" edit settings
+" Edit settings
 set backspace=indent,eol,start " backspacing over everything in insert mode
 set expandtab " fill tabs with spaces
 set nojoinspaces " no extra space after '.' when joining lines
-set shiftwidth=4 " set indentation depth to 8 columns
-set softtabstop=4 " backspacing over 8 spaces like over tabs
+set shiftwidth=2 " set indentation depth to 8 columns
+set softtabstop=2 " backspacing over 8 spaces like over tabs
 set tabstop=2 " set tabulator length to 8 columns
 set textwidth=80 " wrap lines automatically at 80th column
 set number " adds line numbers
@@ -56,6 +59,10 @@ set number " adds line numbers
 " file type specific settings
 filetype plugin on " load the plugins for specific file types
 filetype indent on " automatically indent code
+
+set modeline
+set modelines=1
+let g:jsx_ext_required = 0
 
 " Syntax highlighting and that jazz
 syntax enable " Actually enable the syntax highlighting
